@@ -1,27 +1,8 @@
-.vinc {
-  height: 100px;
-  padding: 10px;
-  border: 1px solid #dee2e6;
-  z-index: 100; 
-  height: 100px;
-margin-bottom: 20px !important;
-  
+.short{
+    display: inline;
+
 }
-
-
-.vinc .nav-link,
-.vinc .btn {
-  color: white;
+a{
+    display: inline;
 }
-
-.vinc .nav-link:hover {
-  color: #ccc;
-}
-.container {
-  max-width: 1800px;
-  width: 90%;
-  margin: 40px auto 0 auto;
-}
-
-
 
