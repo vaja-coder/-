@@ -7,16 +7,38 @@
     <link rel="stylesheet" href="../templates/styles/style.css">
 </head>
 <body>
-{% include 'nav.html' %}
- <form method="POST" enctype="multipart/form-data">
-    {{ form.hidden_tag()}}
-    {{ form.item_name(class="form-control",placeholder="name") }}
-    {{ form.img(class="form-control",placeholder="add img") }}
-    {{ form.size(class="form-control",placeholder="size") }}
-    {{ form.price(class="form-control",placeholder="price") }}
-    {{ form.description(class="form-control",placeholder="wood you add a description")}}
-    {{ form.submit(placeholder="add") }}
- </form>
+{% extends 'base.html' %}
+{% block title %}ჯუნგლებში დაგდებული ნივთი{% endblock %}
+
+{% block content %}
+<h2 class="text-center mb-4">დაამატე ნივთი</h2>
+
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <form method="POST" enctype="multipart/form-data" class="p-4 border rounded shadow-sm bg-light">
+      {{ form.hidden_tag() }}
+      <div class="mb-3">
+        {{ form.item_name(class="form-control", placeholder="ნივთის სახელი") }}
+      </div>
+      <div class="mb-3">
+        {{ form.img(class="form-control", placeholder="სურათის ატვირთვა") }}
+      </div>
+      <div class="mb-3">
+        {{ form.size(class="form-control", placeholder="ზომა") }}
+      </div>
+      <div class="mb-3">
+        {{ form.price(class="form-control", placeholder="ფასი") }}
+      </div>
+      <div class="mb-3">
+        {{ form.description(class="form-control", placeholder="აღწერა") }}
+      </div>
+      <div class="text-end">
+        {{ form.submit(class="btn btn-success", value="დამატება") }}
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

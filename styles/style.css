@@ -23,5 +23,28 @@ margin-bottom: 20px !important;
   margin: 40px auto 0 auto;
 }
 
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Button hover effect */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Image hover zoom */
+.card img, .carousel-item img {
+  transition: transform 0.4s ease;
+}
+.card img:hover, .carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+
 
 
