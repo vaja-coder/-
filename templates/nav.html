@@ -1,57 +1,25 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html>
-  <head>
-    <link href="../styles/style.css">
-  </head>
-  <body>
-    <div>
-      <nav>
-        <ul>
-          <img src="../static/თბს.png">
-        <li class="short"><a href="/">home</a></li>
-        <li class="short"><a href="/login">login</a></li>
-        <li class="short"><a href="/register">register</a></li>
-        <li class="short"><a href="/add_item">add_item</a></li>
-      </ul>
-      </nav>
-    </div>
-  </body>
-=======
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Navigation Example</title>
-
-  <!-- Bootstrap CSS -->
+  <title>Navigation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Your custom CSS -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
- <!-- nav.html -->
 <nav class="navbar navbar-expand-lg fixed-top bg-light border-bottom shadow-sm">
-  <div class="container-fluid">
-    <!-- Logo -->
+  <div class="container-fluid">    
     <a class="navbar-brand" href="https://www.tbceducation.ge/">
-      <img src="{{ url_for('static', filename='თბს.png') }}" alt="TBC Logo" height="40">
+      <img src="../static/თბს.png" height="40">
     </a>
-
-    <!-- Mobile toggle button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Menu items -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-center gap-2">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">მთავარი</a>
         </li>
-
         {% if current_user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link" href="/add_item">ახალი ჩანაწერი</a>
@@ -71,9 +39,6 @@
     </div>
   </div>
 </nav>
-
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
->>>>>>> 8477c7bae0f7eaaf8372c8b28b39e0d6902f5390
 </html>

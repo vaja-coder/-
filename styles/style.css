@@ -1,51 +1,19 @@
-.short{
-    display: inline;
-
-}
-a{
-    display: inline;
+h2.text-center {
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-<<<<<<< HEAD
-=======
-
-.vinc .nav-link,
-.vinc .btn {
-  color: white;
+form {
+  background-color: #f9f9f9;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.vinc .nav-link:hover {
-  color: #ccc;
-}
-.container {
-  max-width: 1800px;
-  width: 90%;
-  margin: 40px auto 0 auto;
+.form-control {
+  border-radius: 8px;
 }
 
-.carousel img {
-  height: 500px;
-  object-fit: cover;
+.top {
+  margin-bottom: 30px !important;
 }
-
-/* Button hover effect */
-.btn {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Image hover zoom */
-.card img, .carousel-item img {
-  transition: transform 0.4s ease;
-}
-.card img:hover, .carousel-item img:hover {
-  transform: scale(1.05);
-}
-
-
-
-
->>>>>>> 8477c7bae0f7eaaf8372c8b28b39e0d6902f5390
